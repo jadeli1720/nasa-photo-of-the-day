@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import Image from "./Image";
+import Data from "./data";
 
 
-// https://api.nasa.gov/api.html#apod
 export default function CardContent() {
-    const [image, set]
+    return (
+        <div className="card">
+            This is some text!
+        </div>
+    )
 }

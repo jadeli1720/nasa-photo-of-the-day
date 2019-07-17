@@ -1,1 +1,9 @@
-import React, {  useState } from "react";
+import React from "react";
+
+export default function Image({ imgUrl }) {
+    return (
+        <div className="image">
+            <img src={imgUrl} style = {{maxWidth: '200px'}} />
+        </div>
+    );
+}
