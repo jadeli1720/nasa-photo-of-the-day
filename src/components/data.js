@@ -13,7 +13,7 @@ export default function Data() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=cneyY3k8YLbbXoGH4H6xR1Nj410rdjBW96m4wSJy&date=2019-05-14`
+        `https://api.nasa.gov/planetary/apod?api_key=cneyY3k8YLbbXoGH4H6xR1Nj410rdjBW96m4wSJy&date=2019-06-17`
       )
       // Could use this string interpolation to implement date picker {date}
       .then(res => {

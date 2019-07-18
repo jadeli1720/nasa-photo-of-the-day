@@ -1,6 +1,9 @@
 body {
- overflow: hidden;
+  background: rgb(19, 3, 44);
+  background: linear-gradient(to bottom, rgb(19,3,32) 10%, rgb(19,3,32) 25%, rgb(24, 25, 63) 100%);
+ overflow-x: hidden;
  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+ color:rgb(43, 45, 54);
 }
 
 /* code {
@@ -8,5 +11,6 @@ body {
     monospace;
 } */
 .media {
-  width: 900px;
+  max-width:100%;
+  height: auto;
 }
