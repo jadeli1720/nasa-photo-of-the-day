@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
-import CardContent from "./components/Card";
+// import CardContent from "./components/Card";
+import Data from "./components/data";
+// import Image from "./components/Image";
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
-      <CardContent />
+      {/* <CardContent /> */}
+      <Data />
+      {/* <Image /> */}
     </div>
   );
 }
