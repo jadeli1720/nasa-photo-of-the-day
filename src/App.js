@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Data from "./components/data";
 import { Header } from "./components/StylizeWidgets";
+import  "./index";
 
 function App() {
   return (

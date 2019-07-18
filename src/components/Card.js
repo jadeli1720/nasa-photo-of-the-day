@@ -1,18 +1,18 @@
 import React from "react";
-import { Card, Icon, Image } from "semantic-ui-react";
-import { ImageContainer } from "./StylizeWidgets";
+import { Divider, Card, Icon, Image } from "semantic-ui-react";
+import { ImageContainer, Title } from "./StylizeWidgets";
 
 export default function InfoCard(info) {
   console.log(info);
   return (
     <Card>
-      <ImageContainer>
-        <Image src={info.url} size="huge" wrapped ui={false} />
-      </ImageContainer>
-
+        <ImageContainer>
+            <Image className="media" src={info.url} size='tiny' centered />
+        </ImageContainer>
+      {/* <Image src={info.url} /> */}
       <Card.Content>
         <Card.Header>
-          <h2>{info.title}</h2>
+          <Title>{info.title}</Title>
         </Card.Header>
         <Card.Meta>{info.date}</Card.Meta>
         {/** Not working!*/}
