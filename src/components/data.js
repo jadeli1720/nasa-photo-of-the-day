@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "./Card";
+import InfoCard from "./Card";
 
 //api address:
 //1. https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2015-03-17
@@ -29,10 +29,12 @@ export default function Data() {
   return (
     <div className="cardBody"> 
       {data ? ( //<Card info={data}/>
-        <Card
+        <InfoCard
           url={data.url}
           title={data.title}
           explanation={data.explanation}
+          date={data.date}
+          copyright={data.copyright}
         />
       ) : (
         <div>Loading...</div>
