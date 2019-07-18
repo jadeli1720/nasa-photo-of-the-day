@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import InfoCard from "./Card";
+import { CardContainer } from "./StylizeWidgets";
 
 //api address:
 //1. https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2015-03-17
@@ -27,7 +28,7 @@ export default function Data() {
 
   // if (!data) return <h3>Loading...</h3>;
   return (
-    <div className="cardBody"> 
+    <CardContainer className="cardBody"> 
       {data ? ( //<Card info={data}/>
         <InfoCard
           url={data.url}
@@ -39,6 +40,6 @@ export default function Data() {
       ) : (
         <div>Loading...</div>
       )}
-    </div>
+    </CardContainer>
   );
 }

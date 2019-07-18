@@ -1,11 +1,15 @@
 import React from "react";
 import { Card, Icon, Image } from "semantic-ui-react";
+import { ImageContainer } from "./StylizeWidgets";
 
 export default function InfoCard(info) {
   console.log(info);
   return (
     <Card>
-      <Image src={info.url} wrapped ui={false} />
+      <ImageContainer>
+        <Image src={info.url} size="huge" wrapped ui={false} />
+      </ImageContainer>
+
       <Card.Content>
         <Card.Header>
           <h2>{info.title}</h2>
