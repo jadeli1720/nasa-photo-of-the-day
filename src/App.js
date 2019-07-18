@@ -7,10 +7,19 @@ import Data from "./components/data";
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      {/* Plan
+      <Card>
+        <h1>Title</h1>
+        <div>
+          <img>
+        </div>
+        <p>description</p>
+        <div>
+          <p>Copyright</p>
+          <p>Date</p>
+        </div>
+      </Card>
+       */}
       {/* <CardContent /> */}
       <Data />
       {/* <Image /> */}
