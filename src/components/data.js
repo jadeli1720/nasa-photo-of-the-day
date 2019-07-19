@@ -13,7 +13,7 @@ export default function Data() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=cneyY3k8YLbbXoGH4H6xR1Nj410rdjBW96m4wSJy&date=2019-06-17`
+        `https://api.nasa.gov/planetary/apod?api_key=cneyY3k8YLbbXoGH4H6xR1Nj410rdjBW96m4wSJy`
       )
       // Could use this string interpolation to implement date picker {date}
       .then(res => {
@@ -24,12 +24,12 @@ export default function Data() {
         console.log("error", error);
       });
   }, []);
-  console.log(data);
+  // console.log(data);
 
   // if (!data) return <h3>Loading...</h3>;
   return (
     <CardContainer className="cardBody"> 
-      {data ? ( //<Card info={data}/>
+      {data ? ( 
         <InfoCard
           url={data.url}
           title={data.title}
@@ -38,7 +38,7 @@ export default function Data() {
           copyright={data.copyright}
         />
       ) : (
-        <div>Loading...</div>
+        <div>Loading...</div>//Can put loader here
       )}
     </CardContainer>
   );
