@@ -1,6 +1,6 @@
 import React from "react";
-import { Divider, Card, Icon, Image } from "semantic-ui-react";
-import { ImageContainer, Title, Date, Para } from "./StylizeWidgets";
+import { Card, Icon, Image } from "semantic-ui-react";
+import { ImageContainer, Title, Date, Para, Footer } from "./StylizeWidgets";
 
 export default function InfoCard(info) {
     console.log(info);
@@ -19,21 +19,23 @@ export default function InfoCard(info) {
 
                 <Card.Description>
                     <Para>
-                        {info.explanation}  
+                        {info.explanation}
                     </Para>
                 </Card.Description>
             </Card.Content>
 
             <Card.Content extra>
-                <a>
-                    <Icon name="copyright outline" />
-                    {info.copyright}
-                </a>
-                <Card.Meta>
-                    <Date>
-                        {info.date}
-                    </Date>
-                </Card.Meta>
+                <Footer>
+                    <Para>
+                         Photo By: {info.copyright}
+                    </Para>
+                    <Card.Meta>
+                        <Date>
+                            {info.date}
+                        </Date>
+                    </Card.Meta>
+                </Footer>
+
             </Card.Content>
         </Card>
     );

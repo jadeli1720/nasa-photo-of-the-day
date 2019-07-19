@@ -2,7 +2,7 @@ body {
   background: rgb(19, 3, 44);
   background: linear-gradient(to bottom, rgb(19,3,32) 10%, rgb(19,3,32) 25%, rgb(24, 25, 63) 100%);
  overflow-x: hidden;
- font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+ font-family: 'Roboto Mono', 'Lucida Console', monaco, monospace;
  color:rgb(43, 45, 54);
 }
 
@@ -14,3 +14,4 @@ body {
   max-width:100%;
   height: auto;
 }
+
