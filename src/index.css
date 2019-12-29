@@ -1,13 +1,19 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgb(19, 3, 44);
+  background: 
+  linear-gradient(to bottom, #030106 10%,#06020D 25%, #130320 70%, #18193f 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto Mono', 'Lucida Console', source-code-pro, Monaco, Consolas, "Courier New", monospace;
+  color: navajowhite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.media {
+  max-width:100%;
+  height: auto;
 }
+
